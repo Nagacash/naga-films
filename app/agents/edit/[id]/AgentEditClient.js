@@ -16,7 +16,7 @@ export default function AgentEditClient({ userData }) {
       const fromStorage = localStorage.getItem(STORAGE_KEY);
       if (fromStorage) return fromStorage;
       const match = document.cookie.match(/muapi_key=([^;]+)/);
-      return match ? match[1] : null;
+      return match ? decodeURIComponent(match[1]) : null;
     };
 
     const apiKey = getKey();
