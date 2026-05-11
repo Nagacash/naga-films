@@ -1,39 +1,41 @@
-# Open Generative AI — Unrestricted Open-Source Alternative to AI Video Platforms
+# Naga Films — Open Generative AI Studio
 
-> **The free, open-source, unrestricted alternative to AI Video Platforms.** Generate AI images and videos using 200+ state-of-the-art models — no content filters, no closed ecosystem, no subscription fees.
+> **Naga Films** — a production-minded, open creative stack for image, video, cinema, and lip-sync workflows. This distribution is maintained and documented by **Naga Films** for teams who want an unrestricted, self-hostable studio without a closed platform.
 
-**Community:** Join [Reddit](reddit.com/r/muapi) & [Discord](https://discord.gg/s7KW4fsqXK) for discussions and support
+**Open Generative AI** (upstream, MIT) is the engine under the hood: 200+ models, no content filters, no subscription wall — full creative control. Naga Films packages it for real-world production and pipeline use.
 
-> 🤖 **Automate media generations with AI coding agents:** [Generative-Media-Skills](https://github.com/SamurAIGPT/Generative-Media-Skills) — a library of skills that let agents like **Claude Code**, **Codex**, and other coding assistants drive 200+ image/video models end-to-end (prompt → generate → edit → stitch) directly from your terminal. Perfect for building automated media pipelines without touching a UI.
+**Community (upstream project):** [Reddit](https://reddit.com/r/muapi) & [Discord](https://discord.gg/s7KW4fsqXK) — discussions, support, and model news.
+
+> 🤖 **Automate media with AI coding agents:** [Generative-Media-Skills](https://github.com/SamurAIGPT/Generative-Media-Skills) — skills for **Claude Code**, **Codex**, and similar tools to drive image/video models end-to-end from the terminal.
 
 ### Related projects
 
-> **Open-source Node based workflow builder** -> https://github.com/SamurAIGPT/Vibe-Workflow
+> **Open-source Node workflow builder** → [Vibe-Workflow](https://github.com/SamurAIGPT/Vibe-Workflow)
 
-> **Open-source AI Clipping — turn any long-form YouTube video into viral-ready vertical shorts** -> https://github.com/SamurAIGPT/AI-Youtube-Shorts-Generator
+> **AI clipping — long-form to vertical shorts** → [AI-Youtube-Shorts-Generator](https://github.com/SamurAIGPT/AI-Youtube-Shorts-Generator)
 
-## 🌐 Try it Online — No Install Required
+## 🌐 Try it online
 
-**Hosted version:** [https://dev.muapi.ai/open-generative-ai](https://dev.muapi.ai/open-generative-ai)
+**Reference hosted build (Muapi):** [dev.muapi.ai/open-generative-ai](https://dev.muapi.ai/open-generative-ai)
 
-Use all four studios (Image, Video, Lip Sync, Cinema) directly in your browser — no Node.js, no setup. Sign up for a free account to start generating. The hosted version is always up to date with the latest models.
+For **Naga Films** deployments, use your own Vercel/hosting and environment variables (see `.env.example`) — end users can still bring their own API key in the app, same as the public build.
 
-**Follow** the [creator](https://x.com/matchaman11) for updates
+**Updates from Naga Films:** add your site and social links here when you publish them.
 
 ---
 
-## ⬇️ Download Desktop App
+## ⬇️ Download desktop app
 
-One-click installers — no Node.js or terminal required.
+One-click installers — no Node.js or terminal required. Binaries are published on the **GitHub Releases** page for this repository (version numbers may differ from the table below — always use the latest release).
 
 | Platform | Download |
 |---|---|
-| macOS Apple Silicon (M1/M2/M3/M4) | [Open Generative AI-1.0.9-arm64.dmg](https://github.com/Anil-matcha/Open-Generative-AI/releases/download/v1.0.9/Open.Generative.AI-1.0.9-arm64.dmg) |
-| macOS Intel (x64) | [Open Generative AI-1.0.9.dmg](https://github.com/Anil-matcha/Open-Generative-AI/releases/download/v1.0.9/Open.Generative.AI-1.0.9.dmg) |
-| Windows (x64) | [Open Generative AI Setup 1.0.9.exe](https://github.com/Anil-matcha/Open-Generative-AI/releases/download/v1.0.9/Open.Generative.AI.Setup.1.0.9.exe) |
-| Linux (Ubuntu x64) | [v1.0.9 release](https://github.com/Anil-matcha/Open-Generative-AI/releases/tag/v1.0.9) (`.AppImage` / `.deb`), or build locally with `npm run electron:build:linux`. |
+| macOS Apple Silicon (M1/M2/M3/M4) | DMG (arm64) on Releases |
+| macOS Intel (x64) | DMG (x64) on Releases |
+| Windows (x64) | NSIS installer on Releases |
+| Linux (Ubuntu x64) | `.AppImage` / `.deb` on Releases, or build locally with `pnpm run electron:build:linux`. |
 
-All releases: [github.com/Anil-matcha/Open-Generative-AI/releases](https://github.com/Anil-matcha/Open-Generative-AI/releases)
+**All releases:** open the **Releases** tab on this repo’s GitHub page.
 
 ### macOS Installation Guide
 
@@ -71,7 +73,7 @@ Linux artifacts are available when building with Electron Builder:
 
 ```bash
 # Build Linux installers (AppImage + .deb)
-npm run electron:build:linux
+pnpm run electron:build:linux
 ```
 
 Generated files are written to the `release/` folder:
@@ -109,9 +111,10 @@ echo 'kernel.apparmor_restrict_unprivileged_userns=0' | sudo tee /etc/sysctl.d/9
 
 ---
 
-Open Generative AI is a free, unrestricted, open-source AI image, video, cinema, and lip sync studio that brings unrestricted creative workflows to everyone. No content filters, no prompt rejections, no guardrails — just full creative freedom. Powered by [Muapi.ai](https://muapi.ai), it supports text-to-image, image-to-image, text-to-video, image-to-video, and audio-driven lip sync generation across models like Flux, Nano Banana, Midjourney, Kling, Sora, Veo, Seedream, Infinite Talk, LTX Lipsync, Wan 2.2, and more — all from a sleek, modern interface you can self-host and customize.
+**Naga Films — Open Generative AI Studio** is the same unrestricted, open-source image/video/cinema/lip-sync stack you know, presented here for **film, post, and generative pipeline** work: no content filters, no prompt rejections — full creative freedom. It is powered by [Muapi.ai](https://muapi.ai) and supports text-to-image, image-to-image, text-to-video, image-to-video, and audio-driven lip sync across a wide model catalog (Flux, Kling, Sora-class routes, Veo, Seedream, lip-sync families, Wan, etc.) — inside a UI you can self-host, theme, and extend.
 
-**Why Open Generative AI instead of other AI Video Platforms?**
+**Why use this distribution (Naga Films)?**
+- **Production posture** — documented for deployment (e.g. Vercel env for OpenRouter) and BYOK flows for collaborators
 - **Unrestricted** — no content filters, no nanny guardrails, no prompt rejections
 - **Free & open-source** — no subscription, no vendor lock-in
 - **Self-hosted** — your data stays on your machine, full creative control
@@ -120,7 +123,7 @@ Open Generative AI is a free, unrestricted, open-source AI image, video, cinema,
 - **Lip Sync Studio** — animate portraits or sync lips to any audio with 9 dedicated models
 - **Extensible** — add your own models, modify the UI, build on top of it
 
-For a deep dive into the technical architecture and the philosophy behind the "Infinite Budget" cinema workflow, see our [comprehensive guide and roadmap](https://medium.com/@anilmatcha/).
+For upstream history and roadmap context, see the [original Medium overview](https://medium.com/@anilmatcha/) from the founding maintainer.
 
 ## ⚡ Local Model Inference (Desktop App Only)
 
@@ -379,44 +382,45 @@ Every image you upload is saved locally (URL + thumbnail) so you never upload th
 ### Prerequisites
 
 - [Node.js](https://nodejs.org/) (v18+)
-- A [Muapi.ai](https://muapi.ai) API key
+- [pnpm](https://pnpm.io/) (v10+ — `corepack enable && corepack prepare pnpm@stable --activate`)
+- A [Muapi.ai](https://muapi.ai) API key (unless you only use local inference in the desktop app)
 
 ### Setup
 
-> **Most users want the desktop app, not this dev path.** If you just want to run Open Generative AI on your machine, [download a prebuilt installer](#-download-desktop-app) instead — no Node.js required. The instructions below are for contributors building from source.
+> **Most users want the desktop app, not this dev path.** If you just want to run the studio on your machine, [download a prebuilt installer](#-download-desktop-app) instead — no Node.js required. The instructions below are for contributors building from source.
 
 Pick the entry point that matches your goal:
 
-- **Desktop app (Electron)** → `npm run electron:dev`
-- **Hosted web version (Next.js)** → `npm run dev`
+- **Desktop app (Electron)** → `pnpm run electron:dev`
+- **Hosted web version (Next.js)** → `pnpm dev`
 
 ```bash
-# Clone the repository (with submodules — required for the workflow + agent packages)
-git clone --recurse-submodules https://github.com/Anil-matcha/Open-Generative-AI.git
-cd Open-Generative-AI
+# Clone this repository (with submodules — required for the workflow + agent packages)
+git clone --recurse-submodules <YOUR_REPO_URL>
+cd <YOUR_REPO_DIRECTORY>
 
 # If you already cloned without --recurse-submodules, run this once:
 # git submodule update --init --recursive
 
 # Install dependencies + build workspace packages (studio, workflow, agents).
-# This step is REQUIRED — `npm install` alone is not enough; the workspaces
+# This step is REQUIRED — `pnpm install` alone is not enough; workspaces
 # need to be built before either dev script will work.
-npm run setup
+pnpm run setup
 
 # Then start ONE of:
-npm run electron:dev   # Desktop app (Electron + Vite) — recommended
-npm run dev            # Hosted web version (Next.js) → http://localhost:3000
+pnpm run electron:dev   # Desktop app (Electron + Vite) — recommended
+pnpm dev                # Hosted web version (Next.js) → http://localhost:3000
 ```
 
 You'll be prompted to enter your Muapi API key on first use (skip the key if you only plan to use local models).
 
-> **Troubleshooting — `Couldn't find a 'pages' directory`**: this means Next.js can't see the `app/` folder. Confirm you're running `npm run dev` from the repo root (the directory that contains `app/`, `package.json`, and `next.config.mjs`), and that you cloned with submodules. Re-run `npm run setup` if `packages/Vibe-Workflow` or `packages/Open-Poe-AI` are empty.
+> **Troubleshooting — `Couldn't find a 'pages' directory`**: this means Next.js can't see the `app/` folder. Confirm you're running `pnpm dev` from the repo root (the directory that contains `app/`, `package.json`, and `next.config.mjs`), and that you cloned with submodules. Re-run `pnpm run setup` if `packages/Vibe-Workflow` or `packages/Open-Poe-AI` are empty.
 
 ### Production Build
 
 ```bash
-npm run build
-npm run start
+pnpm run build
+pnpm run start
 ```
 
 ### Desktop App Build
@@ -425,19 +429,19 @@ Build native desktop apps with Electron:
 
 ```bash
 # macOS (DMG — Intel + Apple Silicon)
-npm run electron:build
+pnpm run electron:build
 
 # Windows (NSIS installer — x64 + ARM64)
-npm run electron:build:win
+pnpm run electron:build:win
 
 # Linux (AppImage + DEB — x64)
-npm run electron:build:linux
+pnpm run electron:build:linux
 
 # Both platforms in one pass
-npm run electron:build:all
+pnpm run electron:build:all
 ```
 
-Installers are output to the `release/` folder. Pre-built binaries are also available on the [Releases page](https://github.com/Anil-matcha/Open-Generative-AI/releases).
+Installers are output to the `release/` folder. Pre-built binaries may be attached to GitHub Releases for this repository when Naga Films publishes them.
 
 ## 🏗️ Architecture
 
@@ -470,7 +474,7 @@ Open-Generative-AI/
 └── package.json                # workspaces: ["packages/studio"]
 ```
 
-The `packages/studio` library is also consumed by the hosted version on [muapi.ai](https://muapi.ai) — model updates made in `packages/studio/src/models.js` apply to both the self-hosted app and the hosted version automatically.
+The `packages/studio` library ships with this repo; model definitions in `packages/studio/src/models.js` power the UI. Naga Films tracks upstream changes from the original Open Generative AI line.
 
 ## 🔌 API Integration
 
@@ -497,17 +501,17 @@ Lip sync jobs use the same two-step pattern: a dedicated `processLipSync()` meth
 
 ## 🛠️ Tech Stack
 
-- **Next.js 14** — App Router, server components, fast dev server
-- **React 18** — Studio UI components
+- **Next.js 14+** — App Router
+- **React 18+** — Studio UI components
 - **Tailwind CSS v3** — Utility-first styling
-- **npm workspaces** — Monorepo with shared `packages/studio` library
-- **Muapi.ai** — AI model API gateway
+- **pnpm workspaces** — Monorepo with shared `packages/studio` library
+- **Muapi.ai** — Model API gateway
 
-## 🤔 How is this different from other AI Video Plaforms?
+## 🤔 How is this different from other AI platforms?
 
-**Open Generative AI** is a community-driven, open-source alternative that provides similar creative capabilities without the closed ecosystem:
+**This Naga Films distribution** keeps the upstream promise: open source, unrestricted, and model-rich — without a closed ecosystem:
 
-| | Other providers | Open Generative AI |
+| | Other providers | Naga Films — this studio |
 | :--- | :--- | :--- |
 | **Cost** | Subscription-based | Free (open-source) |
 | **Content filters** | Yes — prompts blocked or altered | None — fully unrestricted |
@@ -515,7 +519,7 @@ Lip sync jobs use the same two-step pattern: a dedicated `processLipSync()` meth
 | **Models** | Proprietary | 200+ open & commercial models |
 | **Multi-image input** | Limited | Up to 14 images per request |
 | **Lip sync** | No | 9 models, image & video modes |
-| **Hosted version** | Subscription | Free at [muapi.ai/open-generative-ai](https://muapi.ai/open-generative-ai) |
+| **Hosted reference** | Subscription | Third-party builds (e.g. Muapi) |
 | **Self-hosting** | No | Yes |
 | **Customizable** | No | Fully hackable |
 | **Data privacy** | Cloud-based | Your data stays local |
@@ -523,14 +527,16 @@ Lip sync jobs use the same two-step pattern: a dedicated `processLipSync()` meth
 
 ## 📄 License
 
-MIT
+MIT — inherits the upstream **Open Generative AI** license.
 
 ## 🙏 Credits
 
-Built with [Muapi.ai](https://muapi.ai) — the unified API for AI image and video generation models.
+- **Maintainer & framing:** **Naga Films** — swap in your public site or email when you publish them.
+- **Upstream engine:** Open Generative AI / community contributors.
+- **API access:** [Muapi.ai](https://muapi.ai) — unified gateway for image and video models.
 
 ---
-**Deep Dive**: For more details on the "AI Influencer" engine, upcoming "Popcorn" storyboarding features, and the future of this project, read the [full technical overview](https://medium.com/@anilmatcha/).
+**Background reading:** Original project notes and roadmap context — [Medium (Anil Matcha)](https://medium.com/@anilmatcha/).
 
 ---
-*Looking for a free, unrestricted AI Video Plaform? Open Generative AI is an open-source, unrestricted AI image and video generation studio — with no content filters that you can self-host, customize, and extend.*
+*Naga Films — Open Generative AI Studio: an unrestricted, self-hostable creative stack for image and video — with the freedom to customize, extend, and run it on your own infrastructure.*
