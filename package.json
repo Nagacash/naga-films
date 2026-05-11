@@ -17,7 +17,7 @@
     "build:studio": "pnpm --filter ./packages/studio run build",
     "build:workflow": "pnpm --filter ./packages/Vibe-Workflow/packages/workflow-builder run build",
     "build:agent": "pnpm --filter ./packages/Open-Poe-AI/packages/agents run build",
-    "build:packages": "pnpm run build:workflow && pnpm run build:agent && pnpm run build:studio && node -e \"const fs=require('fs');for(const p of ['packages/Vibe-Workflow/packages/workflow-builder/dist/tailwind.css','packages/Open-Poe-AI/packages/agents/dist/tailwind.css','packages/studio/dist/tailwind.css']){if(!fs.existsSync(p)){console.error('MISSING after build:packages -> '+p);process.exit(1)}else{console.log('OK '+p)}}\"",
+    "build:packages": "node scripts/build-packages.js",
     "setup": "git submodule update --init --recursive && pnpm install && pnpm run build:packages",
     "vite:dev": "vite",
     "vite:build": "vite build",
