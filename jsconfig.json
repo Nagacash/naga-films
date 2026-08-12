@@ -1,6 +1,5 @@
 {
   "compilerOptions": {
-    "baseUrl": ".",
     "paths": {
       "@/*": ["./*"],
       "ai-agent": ["./packages/Open-Poe-AI/packages/agents/src/index.js"],
