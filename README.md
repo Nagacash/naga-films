@@ -1,8 +1,19 @@
 # Naga Films — Open Generative AI Studio
 
-> **Naga Films** — a production-minded, open creative stack for image, video, cinema, and lip-sync workflows. This distribution is maintained and documented by **Naga Films** for teams who want an unrestricted, self-hostable studio without a closed platform.
+> A production-minded, open creative stack for image, video, cinema and lip-sync workflows — maintained and documented by **Naga Films** for teams who want an unrestricted, self-hostable studio without a closed platform.
 
-**Open Generative AI** (upstream, MIT) is the engine under the hood: 200+ models, no content filters, no subscription wall — full creative control. Naga Films packages it for real-world production and pipeline use.
+**This is a Naga Films distribution of [Open Generative AI](https://github.com/Anil-matcha/Open-Generative-AI)** (upstream, MIT) — not an original work. The upstream project is the engine under the hood: 200+ models, no content filters, no subscription wall. Naga Films packages, documents and maintains it for real-world production use, and tracks upstream changes.
+
+### Who this is for
+
+Naga Films is a Hamburg film production company, currently in production on **[Könige von St. Pauli](https://the-fascher-bros.com/)**. This studio exists because generative tooling in a real production pipeline has requirements that hosted platforms don't meet:
+
+- **No content filters on legitimate work** — period drama, violence, nightlife and archival reconstruction are routine subject matter for a film, and routinely blocked by consumer platforms
+- **Self-hosted, so material stays in-house** — unreleased concept art, casting references and pre-viz shouldn't sit in a third party's account
+- **Model breadth over model opinion** — 200+ models means picking the right one per shot instead of bending a shot to one vendor's aesthetic
+- **Pipeline-shaped** — desktop builds, local inference and workflow chaining, so it runs inside a production rather than beside it
+
+Useful to any small studio, agency or independent production with the same constraints.
 
 **Community (upstream project):** [Reddit](https://reddit.com/r/muapi) & [Discord](https://discord.gg/s7KW4fsqXK) — discussions, support, and model news.
 
@@ -20,7 +31,7 @@
 
 For **Naga Films** deployments, use your own Vercel/hosting and environment variables (see `.env.example`) — end users can still bring their own API key in the app, same as the public build.
 
-**Updates from Naga Films:** add your site and social links here when you publish them.
+**Naga Films:** [naga-films.com](https://naga-films.com) · engineering by [Naga Codex](https://nagacodex.cloud)
 
 ---
 
@@ -531,8 +542,8 @@ MIT — inherits the upstream **Open Generative AI** license.
 
 ## 🙏 Credits
 
-- **Maintainer & framing:** **Naga Films** — swap in your public site or email when you publish them.
-- **Upstream engine:** Open Generative AI / community contributors.
+- **Maintainer of this distribution:** **[Naga Films](https://naga-films.com)** (Hamburg) — packaging, documentation and pipeline integration. Engineering by [Naga Codex](https://nagacodex.cloud) — Maurice Holda.
+- **Original project:** [Open Generative AI](https://github.com/Anil-matcha/Open-Generative-AI) by Anil Matcha and community contributors — this distribution would not exist without their work.
 - **API access:** [Muapi.ai](https://muapi.ai) — unified gateway for image and video models.
 
 ---
