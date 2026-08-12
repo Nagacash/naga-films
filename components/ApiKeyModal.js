@@ -59,6 +59,12 @@ export default function ApiKeyModal({ onSave }) {
               Get one free →
             </a>
           </p>
+
+          <p className="text-center text-[12px] pt-1">
+            <a href="/" className="text-white/20 hover:text-white/50 transition-colors">
+              ← Back to home
+            </a>
+          </p>
         </form>
       </div>
     </div>

@@ -29,7 +29,7 @@ module.exports = {
                 '3xl': '2rem',
             },
             boxShadow: {
-                'glow': '0 0 20px rgba(217, 255, 0, 0.4)',
+                'glow': '0 0 20px rgba(0, 255, 136, 0.4)',
                 'glow-accent': '0 0 20px rgba(168, 85, 247, 0.4)',
                 '3xl': '0 35px 60px -15px rgba(0, 0, 0, 0.8)',
             }

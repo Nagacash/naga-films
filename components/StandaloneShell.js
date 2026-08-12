@@ -140,6 +140,16 @@ export default function StandaloneShell() {
     document.cookie = "muapi_key=; path=/; expires=Thu, 01 Jan 1970 00:00:00 GMT";
   }, []);
 
+  // Full sign-out: clear credentials and return to the landing page.
+  const handleLogout = useCallback(() => {
+    localStorage.removeItem(STORAGE_KEY);
+    setApiKey(null);
+    setBalance(null);
+    setShowSettings(false);
+    document.cookie = "muapi_key=; path=/; expires=Thu, 01 Jan 1970 00:00:00 GMT";
+    router.push('/');
+  }, [router]);
+
   // Inject API key into all outgoing Axios requests (prop-based approach)
   // We use an interceptor to be selective and NOT send the key to external domains like S3
   useEffect(() => {
@@ -332,19 +342,35 @@ export default function StandaloneShell() {
               </div>
             </div>
 
-            <div className="flex gap-3">
+            <div className="space-y-3">
               <button
-                onClick={handleKeyChange}
-                className="flex-1 h-10 rounded-md bg-red-500/10 text-red-400 hover:bg-red-500/20 text-xs font-semibold transition-all"
+                onClick={handleLogout}
+                className="w-full h-10 rounded-md bg-red-500/10 text-red-400 hover:bg-red-500/20 hover:text-red-300 text-xs font-semibold transition-all flex items-center justify-center gap-2 border border-red-500/10"
               >
-                Change Key
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                  <path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4" />
+                  <polyline points="16 17 21 12 16 7" />
+                  <line x1="21" y1="12" x2="9" y2="12" />
+                </svg>
+                Log out
               </button>
-              <button
-                onClick={() => setShowSettings(false)}
-                className="flex-1 h-10 rounded-md bg-white/5 text-white/80 hover:bg-white/10 text-xs font-semibold transition-all border border-white/5"
-              >
-                Close
-              </button>
+              <div className="flex gap-3">
+                <button
+                  onClick={handleKeyChange}
+                  className="flex-1 h-10 rounded-md bg-white/5 text-white/70 hover:bg-white/10 hover:text-white text-xs font-semibold transition-all border border-white/5"
+                >
+                  Change Key
+                </button>
+                <button
+                  onClick={() => setShowSettings(false)}
+                  className="flex-1 h-10 rounded-md bg-white/5 text-white/80 hover:bg-white/10 text-xs font-semibold transition-all border border-white/5"
+                >
+                  Close
+                </button>
+              </div>
+              <p className="text-center text-[11px] text-white/20 pt-1">
+                Logging out clears your key from this browser.
+              </p>
             </div>
           </div>
         </div>
