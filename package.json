@@ -1,7 +1,7 @@
 {
-  "name": "open-generative-ai",
-  "description": "Open-source alternative to HF AI — AI image, video, cinema and lip sync studio",
-  "homepage": "https://github.com/Anil-matcha/Open-Generative-AI",
+  "name": "naga-films-studio",
+  "description": "Naga Films Studio — self-hostable AI image, video, cinema and lip-sync studio. A Naga Films distribution of Open Generative AI (MIT).",
+  "homepage": "https://github.com/Nagacash/naga-films",
   "private": true,
   "version": "1.0.10",
   "workspaces": [
@@ -28,9 +28,9 @@
     "electron:build:all": "vite build && electron-builder --mac --win --linux"
   },
   "build": {
-    "appId": "ai.generative.open",
-    "productName": "Open Generative AI",
-    "copyright": "Copyright © 2025",
+    "appId": "cloud.nagacodex.nagafilmsstudio",
+    "productName": "Naga Films Studio",
+    "copyright": "© Naga Films / Naga Codex. Built on Open Generative AI (MIT).",
     "directories": {
       "output": "release"
     },
@@ -72,7 +72,7 @@
     "linux": {
       "icon": "public/banner.png",
       "category": "Utility",
-      "maintainer": "Open Generative AI Team",
+      "maintainer": "Naga Films Studio Team",
       "extraFiles": [
         {
           "from": "build/linux/apparmor.profile",

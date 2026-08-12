@@ -7,8 +7,8 @@ const inter = Inter({
 });
 
 export const metadata = {
-  title: 'Naga Film — Open Generative AI',
-  description: 'Generate AI images and videos using 200+ models — Flux, Midjourney, Kling, Veo, Seedance and more.',
+  title: 'Naga Films Studio — AI Image, Video & Cinema',
+  description: 'Naga Films Studio — generate AI images, video, cinema shots and lip sync across 200+ models. Self-hostable, unrestricted, bring your own key.',
 };
 
 export default function RootLayout({ children }) {

@@ -45,7 +45,7 @@ const TEMPLATES = [
 
 function SkillBadge({ label }) {
   return (
-    <span className="px-2 py-0.5 rounded-full bg-[#d9ff00]/10 border border-[#d9ff00]/20 text-[10px] font-bold text-[#d9ff00] uppercase tracking-wider">
+    <span className="px-2 py-0.5 rounded-full bg-[#00ff88]/10 border border-[#00ff88]/20 text-[10px] font-bold text-[#00ff88] uppercase tracking-wider">
       {label}
     </span>
   );
@@ -80,7 +80,7 @@ function ChatMessageMarkdown({ role, content }) {
   const dark = role === "assistant";
 
   const linkClass = dark
-    ? "text-[#d9ff00] underline underline-offset-2 hover:text-[#e8ff47]"
+    ? "text-[#00ff88] underline underline-offset-2 hover:text-[#e8ff47]"
     : "text-black/90 underline underline-offset-2 font-bold";
 
   return (
@@ -150,7 +150,7 @@ function ChatMessageMarkdown({ role, content }) {
                 <code
                   className={
                     dark
-                      ? "rounded px-1 py-0.5 bg-black/45 text-[#d9ff00]/95 font-mono text-[11px]"
+                      ? "rounded px-1 py-0.5 bg-black/45 text-[#00ff88]/95 font-mono text-[11px]"
                       : "rounded px-1 py-0.5 bg-black/10 font-mono text-[11px] text-black font-bold"
                   }
                 >
@@ -163,7 +163,7 @@ function ChatMessageMarkdown({ role, content }) {
             const body = String(children).replace(/\n$/, "");
             if (compositionFence(lang, body)) {
               return (
-                <div className="my-4 p-2.5 bg-black/40 rounded-lg border border-[#d9ff00]/20 flex items-center gap-2 text-[10px] font-black text-[#d9ff00] uppercase tracking-wide">
+                <div className="my-4 p-2.5 bg-black/40 rounded-lg border border-[#00ff88]/20 flex items-center gap-2 text-[10px] font-black text-[#00ff88] uppercase tracking-wide">
                   <FaCode className="shrink-0" />
                   <span>Composition in right panel — open Composition code / Browser preview</span>
                 </div>
@@ -379,7 +379,7 @@ export default function HyperframeStudio({ apiKey }) {
       onClick={() => setRightTab(id)}
       className={`text-[10px] font-black uppercase tracking-widest h-12 border-b-2 transition-colors ${
         rightTab === id
-          ? "text-[#d9ff00] border-[#d9ff00]"
+          ? "text-[#00ff88] border-[#00ff88]"
           : "text-white/40 hover:text-white border-transparent"
       }`}
     >
@@ -397,12 +397,12 @@ export default function HyperframeStudio({ apiKey }) {
       {/* Header */}
       <div className="flex-shrink-0 h-16 border-b border-white/5 flex items-center justify-between px-8 bg-black/40">
         <div className="flex items-center gap-4">
-          <div className="w-10 h-10 rounded-xl bg-[#d9ff00]/10 flex items-center justify-center text-[#d9ff00] border border-[#d9ff00]/20">
+          <div className="w-10 h-10 rounded-xl bg-[#00ff88]/10 flex items-center justify-center text-[#00ff88] border border-[#00ff88]/20">
             <FaTerminal className="text-sm" />
           </div>
           <div>
             <h2 className="text-sm font-black uppercase tracking-[0.2em] text-white">
-              Hyperframe <span className="text-[#d9ff00]">Studio</span>
+              Hyperframe <span className="text-[#00ff88]">Studio</span>
             </h2>
             <p className="text-[10px] text-white/40 uppercase tracking-widest font-bold">AI Video Engineering</p>
           </div>
@@ -445,7 +445,7 @@ export default function HyperframeStudio({ apiKey }) {
                 <div
                   className={`max-w-[85%] rounded-2xl p-4 ${
                     m.role === "user"
-                      ? "bg-[#d9ff00]"
+                      ? "bg-[#00ff88]"
                       : "bg-white/5 border border-white/10"
                   }`}
                 >
@@ -454,10 +454,10 @@ export default function HyperframeStudio({ apiKey }) {
               </div>
             ))}
             {isProcessing && (
-              <div className="max-w-[85%] rounded-2xl border border-[#d9ff00]/25 bg-black/35 p-4 space-y-2">
+              <div className="max-w-[85%] rounded-2xl border border-[#00ff88]/25 bg-black/35 p-4 space-y-2">
                 <div className="flex items-center justify-between gap-4">
-                  <div className="flex items-center gap-2 text-[#d9ff00]">
-                    <div className="w-2 h-2 rounded-full bg-[#d9ff00] animate-pulse" />
+                  <div className="flex items-center gap-2 text-[#00ff88]">
+                    <div className="w-2 h-2 rounded-full bg-[#00ff88] animate-pulse" />
                     <span className="text-[10px] font-black uppercase tracking-[0.2em]">
                       {generationKind === 'plan' ? 'Drafting creative plan' : 'Generating HTML composition'}
                     </span>
@@ -468,7 +468,7 @@ export default function HyperframeStudio({ apiKey }) {
                 </div>
                 <div className="h-2 rounded-full bg-white/10 overflow-hidden">
                   <div
-                    className="h-full bg-[#d9ff00]/90 rounded-full transition-[width] duration-300 ease-out"
+                    className="h-full bg-[#00ff88]/90 rounded-full transition-[width] duration-300 ease-out"
                     style={{ width: `${generationClock.displayPct}%` }}
                   />
                 </div>
@@ -480,9 +480,9 @@ export default function HyperframeStudio({ apiKey }) {
                 </p>
                 <p className="text-[10px] text-white/50 leading-snug border-t border-white/5 pt-2">
                   When the reply includes a fenced{' '}
-                  <code className="rounded bg-black/40 px-1 font-mono text-[#d9ff00]/90">{'`'.repeat(3)}html</code>
+                  <code className="rounded bg-black/40 px-1 font-mono text-[#00ff88]/90">{'`'.repeat(3)}html</code>
                   {' '}code block — or unprompted fenced HTML — the full file opens automatically in{' '}
-                  <span className="text-[#d9ff00] font-bold">Composition Code</span> on the right (chat stays on the left).
+                  <span className="text-[#00ff88] font-bold">Composition Code</span> on the right (chat stays on the left).
                 </p>
               </div>
             )}
@@ -491,16 +491,16 @@ export default function HyperframeStudio({ apiKey }) {
           {/* Input Area */}
           <div className="p-8 border-t border-white/5 bg-black/20 space-y-3">
             {awaitingPlanApproval && !isProcessing && (
-              <div className="rounded-2xl border border-[#d9ff00]/35 bg-[#d9ff00]/[0.06] px-4 py-3 flex flex-col sm:flex-row sm:items-center sm:justify-between gap-3">
+              <div className="rounded-2xl border border-[#00ff88]/35 bg-[#00ff88]/[0.06] px-4 py-3 flex flex-col sm:flex-row sm:items-center sm:justify-between gap-3">
                 <div className="text-[11px] text-white/70 leading-snug">
-                  <span className="font-black uppercase tracking-wider text-[#d9ff00] text-[10px]">Plan ready.</span>{' '}
+                  <span className="font-black uppercase tracking-wider text-[#00ff88] text-[10px]">Plan ready.</span>{' '}
                   Read it above, then approve to generate full HTML — or send a revision in the prompt.
                 </div>
                 <div className="flex flex-wrap gap-2">
                   <button
                     type="button"
                     onClick={handleApprovePlanBuild}
-                    className="px-4 py-2 rounded-xl bg-[#d9ff00] text-black text-[10px] font-black uppercase tracking-wider hover:opacity-95"
+                    className="px-4 py-2 rounded-xl bg-[#00ff88] text-black text-[10px] font-black uppercase tracking-wider hover:opacity-95"
                   >
                     Build composition
                   </button>
@@ -520,7 +520,7 @@ export default function HyperframeStudio({ apiKey }) {
                         <button 
                             key={t.id}
                             onClick={() => handleTemplateClick(t.prompt)}
-                            className="whitespace-nowrap px-4 py-2 rounded-xl bg-white/5 border border-white/5 text-[10px] font-bold uppercase tracking-widest hover:bg-white/10 hover:border-[#d9ff00]/20 transition-all"
+                            className="whitespace-nowrap px-4 py-2 rounded-xl bg-white/5 border border-white/5 text-[10px] font-bold uppercase tracking-widest hover:bg-white/10 hover:border-[#00ff88]/20 transition-all"
                         >
                             {t.label}
                         </button>
@@ -535,7 +535,7 @@ export default function HyperframeStudio({ apiKey }) {
                   setPlanFirst(e.target.checked);
                   if (!e.target.checked) setAwaitingPlanApproval(false);
                 }}
-                className="rounded border-white/20 bg-white/5 text-[#d9ff00] focus:ring-[#d9ff00]/40"
+                className="rounded border-white/20 bg-white/5 text-[#00ff88] focus:ring-[#00ff88]/40"
               />
               Review plan first (no HTML until you click &quot;Build composition&quot;)
             </label>
@@ -545,7 +545,7 @@ export default function HyperframeStudio({ apiKey }) {
                 href={STUDENT_KIT_URL}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-[#d9ff00]/80 underline underline-offset-2 hover:text-[#d9ff00]"
+                className="text-[#00ff88]/80 underline underline-offset-2 hover:text-[#00ff88]"
               >
                 hyperframes-student-kit
               </a>{' '}
@@ -557,12 +557,12 @@ export default function HyperframeStudio({ apiKey }) {
                 onChange={(e) => setInput(e.target.value)}
                 onKeyDown={(e) => e.key === 'Enter' && !e.shiftKey && (e.preventDefault(), handleSend())}
                 placeholder="Describe your video or paste code to port..."
-                className="w-full bg-white/5 border border-white/10 rounded-2xl px-6 py-4 text-[13px] text-white focus:outline-none focus:border-[#d9ff00]/50 min-h-[100px] resize-none pr-16"
+                className="w-full bg-white/5 border border-white/10 rounded-2xl px-6 py-4 text-[13px] text-white focus:outline-none focus:border-[#00ff88]/50 min-h-[100px] resize-none pr-16"
               />
               <button
                 onClick={handleSend}
                 disabled={!input.trim() || isProcessing}
-                className="absolute bottom-4 right-4 w-10 h-10 rounded-xl bg-[#d9ff00] text-black flex items-center justify-center hover:scale-105 active:scale-95 transition-all disabled:opacity-50 disabled:grayscale"
+                className="absolute bottom-4 right-4 w-10 h-10 rounded-xl bg-[#00ff88] text-black flex items-center justify-center hover:scale-105 active:scale-95 transition-all disabled:opacity-50 disabled:grayscale"
               >
                 <FaMagic />
               </button>
@@ -584,7 +584,7 @@ export default function HyperframeStudio({ apiKey }) {
                     type="button"
                     title="Download HTML file (open in Chrome to play)"
                     onClick={handleDownloadHtml}
-                    className="p-2 text-white/50 hover:text-[#d9ff00] transition-colors rounded-lg hover:bg-white/5"
+                    className="p-2 text-white/50 hover:text-[#00ff88] transition-colors rounded-lg hover:bg-white/5"
                   >
                     <FaDownload size={14} />
                   </button>
@@ -599,11 +599,11 @@ export default function HyperframeStudio({ apiKey }) {
               </div>
               <p className="text-[10px] text-white/38 leading-snug pb-1 max-w-[48rem]">
                 This studio does <span className="text-white/55">not</span> output an MP4. You get{' '}
-                <span className="text-[#d9ff00]/90">interactive HTML/GSAP</span> — preview it here,{' '}
+                <span className="text-[#00ff88]/90">interactive HTML/GSAP</span> — preview it here,{' '}
                 <button
                   type="button"
                   onClick={handleDownloadHtml}
-                  className="text-[#d9ff00] underline underline-offset-2 hover:text-[#e8ff47]"
+                  className="text-[#00ff88] underline underline-offset-2 hover:text-[#e8ff47]"
                 >
                   download .html
                 </button>
@@ -612,7 +612,7 @@ export default function HyperframeStudio({ apiKey }) {
             </div>
             <div className="flex-1 min-h-0 overflow-hidden flex flex-col">
               {rightTab === "code" ? (
-                <pre className="flex-1 overflow-auto p-6 text-[12px] font-mono text-white/65 selection:bg-[#d9ff00]/25 custom-scrollbar">
+                <pre className="flex-1 overflow-auto p-6 text-[12px] font-mono text-white/65 selection:bg-[#00ff88]/25 custom-scrollbar">
                   <code>{generatedCode}</code>
                 </pre>
               ) : (
@@ -621,7 +621,7 @@ export default function HyperframeStudio({ apiKey }) {
                     <button
                       type="button"
                       onClick={() => setPreviewNonce((n) => n + 1)}
-                      className="inline-flex items-center gap-2 px-4 py-2 rounded-xl bg-[#d9ff00] text-black text-[10px] font-black uppercase tracking-widest hover:opacity-95"
+                      className="inline-flex items-center gap-2 px-4 py-2 rounded-xl bg-[#00ff88] text-black text-[10px] font-black uppercase tracking-widest hover:opacity-95"
                     >
                       <FaPlay className="text-[11px]" />
                       Reload preview
@@ -645,11 +645,11 @@ export default function HyperframeStudio({ apiKey }) {
         )}
 
         {!showCode && isProcessing && (
-            <div className="flex-1 flex flex-col items-center justify-center text-center p-12 bg-[#050505] border-l border-[#d9ff00]/15">
-                <div className="w-20 h-20 rounded-[1.75rem] bg-[#d9ff00]/5 border border-[#d9ff00]/25 flex items-center justify-center mb-6 animate-pulse">
-                    <FaCode className="text-[#d9ff00]/50" size={36} />
+            <div className="flex-1 flex flex-col items-center justify-center text-center p-12 bg-[#050505] border-l border-[#00ff88]/15">
+                <div className="w-20 h-20 rounded-[1.75rem] bg-[#00ff88]/5 border border-[#00ff88]/25 flex items-center justify-center mb-6 animate-pulse">
+                    <FaCode className="text-[#00ff88]/50" size={36} />
                 </div>
-                <h3 className="text-sm font-black uppercase tracking-[0.25em] text-[#d9ff00]/90 mb-3">
+                <h3 className="text-sm font-black uppercase tracking-[0.25em] text-[#00ff88]/90 mb-3">
                   {generationKind === 'plan' ? 'Outlining composition' : 'Awaiting composition'}
                 </h3>
                 <p className="text-white/55 text-[13px] max-w-xs leading-relaxed mb-4">
@@ -676,11 +676,11 @@ export default function HyperframeStudio({ apiKey }) {
                 </p>
                 <div className="grid grid-cols-2 gap-4 mt-12 w-full max-w-xl">
                     <div className="p-6 rounded-2xl bg-white/[0.02] border border-white/5 text-left">
-                        <h4 className="text-[#d9ff00] text-[10px] font-black uppercase mb-2">Mechanical Porting</h4>
+                        <h4 className="text-[#00ff88] text-[10px] font-black uppercase mb-2">Mechanical Porting</h4>
                         <p className="text-xs text-white/60">Convert React video components into high-performance HTML/GSAP.</p>
                     </div>
                     <div className="p-6 rounded-2xl bg-white/[0.02] border border-white/5 text-left">
-                        <h4 className="text-[#d9ff00] text-[10px] font-black uppercase mb-2">Deterministic Motion</h4>
+                        <h4 className="text-[#00ff88] text-[10px] font-black uppercase mb-2">Deterministic Motion</h4>
                         <p className="text-xs text-white/60">Pixel-perfect timing that renders identically across any hardware.</p>
                     </div>
                 </div>
