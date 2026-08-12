@@ -1,5 +1,10 @@
 # Naga Films — Open Generative AI Studio
 
+[![Live Studio](https://img.shields.io/badge/Live-Open_the_Studio-3B82F6?style=flat-square&logoColor=white)](https://naga-films-2j1c.vercel.app/studio)
+[![License](https://img.shields.io/badge/License-MIT-green?style=flat-square)](#-license)
+[![Models](https://img.shields.io/badge/Models-200%2B-6E56CF?style=flat-square)](#-supported-model-categories)
+[![Maintained by Naga Films](https://img.shields.io/badge/Maintained%20by-Naga%20Films-00FF88?style=flat-square)](https://nagacodex.cloud)
+
 > A production-minded, open creative stack for image, video, cinema and lip-sync workflows — maintained and documented by **Naga Films** for teams who want an unrestricted, self-hostable studio without a closed platform.
 
 **This is a Naga Films distribution of [Open Generative AI](https://github.com/Anil-matcha/Open-Generative-AI)** (upstream, MIT) — not an original work. The upstream project is the engine under the hood: 200+ models, no content filters, no subscription wall. Naga Films packages, documents and maintains it for real-world production use, and tracks upstream changes.
@@ -27,11 +32,15 @@ Useful to any small studio, agency or independent production with the same const
 
 ## 🌐 Try it online
 
-**Reference hosted build (Muapi):** [dev.muapi.ai/open-generative-ai](https://dev.muapi.ai/open-generative-ai)
+**▶ Naga Films Studio — live:** [naga-films-2j1c.vercel.app/studio](https://naga-films-2j1c.vercel.app/studio)
 
-For **Naga Films** deployments, use your own Vercel/hosting and environment variables (see `.env.example`) — end users can still bring their own API key in the app, same as the public build.
+Open it and bring your own API key — nothing to install. This is the Naga Films build, deployed and maintained by us.
 
-**Naga Films:** [naga-films.com](https://naga-films.com) · engineering by [Naga Codex](https://nagacodex.cloud)
+*Upstream reference build (Muapi):* [dev.muapi.ai/open-generative-ai](https://dev.muapi.ai/open-generative-ai)
+
+To run your own instance, deploy to Vercel with your own environment variables (see `.env.example`) — end users can still bring their own API key in the app.
+
+**Naga Films** — [open the studio](https://naga-films-2j1c.vercel.app/studio) · engineering by [Naga Codex](https://nagacodex.cloud)
 
 ---
 
@@ -542,7 +551,7 @@ MIT — inherits the upstream **Open Generative AI** license.
 
 ## 🙏 Credits
 
-- **Maintainer of this distribution:** **[Naga Films](https://naga-films.com)** (Hamburg) — packaging, documentation and pipeline integration. Engineering by [Naga Codex](https://nagacodex.cloud) — Maurice Holda.
+- **Maintainer of this distribution:** **Naga Films** (Hamburg) — packaging, documentation and pipeline integration. Engineering by [Naga Codex](https://nagacodex.cloud) — Maurice Holda.
 - **Original project:** [Open Generative AI](https://github.com/Anil-matcha/Open-Generative-AI) by Anil Matcha and community contributors — this distribution would not exist without their work.
 - **API access:** [Muapi.ai](https://muapi.ai) — unified gateway for image and video models.
 
