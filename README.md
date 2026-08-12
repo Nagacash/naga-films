@@ -1,4 +1,13 @@
-# Naga Films — Open Generative AI Studio
+<div align="center">
+
+<img src="public/naga-mark.svg" alt="Naga Films" width="88" height="88" />
+
+# Naga Films Studio
+
+*A Naga Films distribution of Open Generative AI*
+
+</div>
+
 
 [![Live Studio](https://img.shields.io/badge/Live-Open_the_Studio-3B82F6?style=flat-square&logoColor=white)](https://naga-films-2j1c.vercel.app/studio)
 [![License](https://img.shields.io/badge/License-MIT-green?style=flat-square)](#-license)
